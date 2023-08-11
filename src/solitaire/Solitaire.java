@@ -35,8 +35,7 @@ public class Solitaire {
 			}
 		}
 		List<Card> temp = new ArrayList<Card>(deck);
-		//Collections.shuffle(temp);
-		Collections.reverse(temp);
+		Collections.shuffle(temp);
 		deck = new LinkedList<Card>(temp);
 
 		for (int iColumn = 0; iColumn < 7; iColumn++) {
